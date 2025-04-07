@@ -1,0 +1,83 @@
+@font-face 
+{
+	font-family: impact;
+	src: "font/impact.ttf";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat-font {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+}
+
+.homepageHEAD1{
+	font-family: impact;
+	font-size: 100px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.subhead{
+	font-family: impact;
+	font-size: 40px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#aboutIMAGE1{
+	width: 300px;
+	margin-left: 25%;
+}
+
+#aboutIMAGE2{
+	width: 400px;
+	margin-left: 10%;
+}
+
+#aboutIMAGE3{
+	width: 400px;
+	margin-left: 40%;
+}
+
+#webpurposes{
+	font-size: 24px;
+	text-align: center;
+	padding-left: 400px;
+	padding-right: 400px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: justify;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #A8ED88;
+	padding: 80px;
+  }
+
+  .grid-container > div {
+	background-color: #f1f1f1;
+	color: #000;
+	font-size: 18px;
+	text-align: justify;
+  }
+
+  .grid-container2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #edc67c;
+	padding: 80px;
+  }
+
+  .grid-container2 > div {
+	background-color: #f1f1f1;
+	color: #000;
+	font-size: 18px;
+	text-align: justify;
+  }
+
+
+

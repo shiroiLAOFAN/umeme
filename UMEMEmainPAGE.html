@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>U MEMES Home</title>
+        <link rel="stylesheet" href="UMEME_CSS_HOMEPAGE.css">
+        <meta name="homeIMAGESLIDE" content="width=device-width, initial-scale=1">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+          .montserrat-font {
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+          }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="UMEMEmainPAGE.html"><img id="logo" src="design/Logo_NO_BACK.png" alt="logo"></a><br>
+                <nav class="navbar">
+                  <ul class="nav--list">
+                    <li class="item"><a href="UMEMEmainPAGE.html">Home</a></li>
+                    <li class="item"><a href="UMEMEabout.html">About</a></li>
+                    <li class="item"><a href="UMEMEfilled.html">Filled Memes</a></li>
+                    <li class="item"><a href="UMEMEblank.html">Blank Memes</a></li>
+                    <li class="item"><a href="UMEMEcontact.html">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+        <img id="homeIMAGE1" src="filled_memes/general memes/at_class_but_online.png" alt="at_class_but_online">
+        <img id="homeIMAGE2" src="filled_memes/general memes/do_assignment_posts.png" alt="do_assignment_posts">
+        <h1 class="homepageHEAD">UNIVERSITY MEMES</h1>
+        <img id="homeIMAGE3" src="filled_memes/general memes/start_work.png" alt="start_work">
+        <p class="homepageINTRO" style="font-family: Montserrat; font-weight: 500;">Internet memes are popular and fun images that people see in everyday life. 
+            Because they are so common and make people happy, memes can be used to share 
+            important information and help change how people think about our surroundings.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <div class="latest">
+            <h1 class="homeHEADINGS">LATEST POSTS</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="filled_memes/general memes/lunchtime.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="filled_memes/general memes/read_article_manytimes.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="filled_memes/general memes/idea_exists.png" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+
+        <div class="homeAbout">
+            <img id="aboutLOGO" src="design/Logo_NO_BACK.png" alt="logo">
+            <h1 class="homeHEADINGS">ABOUT U MEMES</h1>
+            <p id="webpurpose" style="font-family: Montserrat; font-weight: 500;">U Memes is a website for people who interested in university life experiences and serve as a documentary project to archive interesting moments. 
+              Meme itself has strong impact because it can be simply created, downloaded, shared, reproduced, remixed, and reedited. 
+              The website encourage viewers to create your own memes based your experience and feel free to screenshot or download the images from this website. 
+              Users can also contact me through Contact page and submit the memes that you want to upload to this website. 
+              The website highlight how memes reflect university life and diverse cultures, particularly for young audiences.</p>
+            <img id="BESTmeme" src="design/umemesBEST.png" alt="umemes_BEST">
+            
+        </div>
+
+        <footer class="footer">
+            <a href="UMEMEmainPAGE.html"><img id="footerLOGO" src="design/Logo_NO_BACK.png" alt="logo"></a><br>
+            <div class="container1">
+                <div class="footerCONTACT">
+                    <ul style="list-style-type:none;">
+                        <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEmainPAGE.html">Home</a></li>
+                        <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEabout.html">About</a></li>
+                        <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEfilled.html">Filled Memes</a></li>
+                        <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEblank.html">Blank Memes</a></li>
+                        <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEcontact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 id="sm" style="font-family: Montserrat; font-weight: bold;">Author's Social media</h3>
+                    <br>
+                    <a href="https://www.instagram.com/shiroiii1111/" target="_blank"><img class="social" src="design/ins.png" alt="logo"></a>
+                    <a href="https://www.facebook.com/estherchen77777" target="_blank"><img class="social" src="design/facebook.png" alt="logo"></a>
+                    <a href="https://x.com/EstherEsth85024" target="_blank"><img class="social" src="design/x.png" alt="logo"></a>
+                    <a href="https://www.youtube.com/@chenshiroi1787" target="_blank"><img class="social" src="design/youtube.png" alt="logo"></a>
+                </div>
+
+                <div>
+                    <div class="container2">
+                        <form action="/action_page.php">
+                          <label for="fname" style="font-family: Montserrat; font-weight: bold;">Name</label>
+                          <input type="text" id="fname" style="font-family: Montserrat; font-weight: normal;" name="firstname" placeholder="Your name..">
+                      
+                          <label for="subject" style="font-family: Montserrat; font-weight: bold;">Message</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="font-family: Montserrat; font-weight: normal; height:50px"></textarea>
+                          <input type="submit" style="font-family: Montserrat; font-weight:bold;" value="Submit">
+                        </form>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <p style="font-family: Montserrat; font-weight: normal; text-align: center;">Copyright 2024-2025 by Esther Xinqi Chen. All Rights Reserved. estherchen0912@gmail.com</p>
+            <br>
+        </footer>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>UMEME CONTACT</title>
+    <link rel="stylesheet" href="UMEME_CSS_HOMEPAGE.css">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+          .montserrat-font {
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+          }
+        :root {
+          --primary-color: #010712;
+          --secondary-color: #818386;
+          --bg-color: #FCFDFD;
+          --button-color: #3B3636;
+          --h1-color: #3F444C;
+        }
+
+        [data-theme="dark"] {
+          --primary-color: #FCFDFD;
+          --secondary-color: #818386;
+          --bg-color: #010712;
+          --button-color: #818386;
+          --h1-color: #FCFDFD;
+        }
+
+
+        .contactcontainer {
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          background: #F2F2F2;
+          margin: 0;
+          box-sizing: border-box;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .left-col {
+          width: 45vw;
+          height: 100%;
+          background-size: auto;
+          background-repeat: no-repeat;
+        }
+
+        .right-col {
+          background: #F2F2F2;
+          width: 120vw;
+          height: 100vh;
+          padding: 5rem 3.5rem;
+        }
+
+        h1, label, button, .description {
+          font-family: 'Jost', sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.1rem;
+        }
+
+        h1 {
+          color:black;
+          text-transform: uppercase;
+          font-size: 2.5rem;
+          letter-spacing: 0.5rem;
+          font-weight: 300;
+        }
+
+
+
+        label, .description {
+          color: black;
+          text-transform: uppercase;
+          font-size: 0.625rem;
+        }
+
+        #contact-form {
+          width: 31.25rem;
+          position: relative;
+          margin-top: 2rem;
+          padding: 1rem 0;
+        }
+
+        input, textarea, label {
+          width: 40vw;
+          display: block;
+        }
+
+        p, placeholder, input, textarea {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input::placeholder, textarea::placeholder {
+          color: black;
+        }
+
+        input, textarea {
+          color: black;
+          font-weight: 500;
+          background: white;
+          border: none;
+          border-bottom: 1px solid white;
+          padding: 0.5rem 0;
+          margin-bottom: 1rem;
+          outline: none;
+        }
+
+        textarea {
+          resize: none;
+        }
+
+        button {
+          text-transform: uppercase;
+          font-weight: 300;
+          background: var(--button-color);
+          color: var(--bg-color);
+          width: 10rem;
+          height: 2.25rem;
+          border: none;
+          border-radius: 2px;
+          outline: none;
+          cursor: pointer;
+        }
+
+        input:hover, textarea:hover, button:hover {
+          opacity: 0.5;
+        }
+
+        button:active {
+          opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="container">
+          <a href="UMEMEmainPAGE.html"><img id="logo" src="design/Logo_NO_BACK.png" alt="logo"></a><br>
+          <nav class="navbar">
+            <ul class="nav--list">
+              <li class="item"><a href="UMEMEmainPAGE.html">Home</a></li>
+              <li class="item"><a href="UMEMEabout.html">About</a></li>
+              <li class="item"><a href="UMEMEfilled.html">Filled Memes</a></li>
+              <li class="item"><a href="UMEMEblank.html">Blank Memes</a></li>
+              <li class="item"><a href="UMEMEcontact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div> 
+  </header>
+
+
+
+    <div class="contactcontainer">
+        <div class="left-col">
+          <img class="logo" >
+        </div>
+        <div class="right-col">
+          <div class="theme-switch-wrapper">
+          
+        
+      </div>
+          
+          <h1 style="font-family: Montserrat; font-weight: normal;">Contact us</h1>
+          
+          
+      <form id="contact-form" method="post">
+            <label for="name" style="font-family: Montserrat; font-weight: normal;">Full name*</label>
+              <input type="text" id="name" style="font-family: Montserrat; font-weight: normal;" name="name"  required>
+            <label for="email" style="font-family: Montserrat; font-weight: normal;">Email Address*</label>
+              <input type="email" id="email" name="email"  required>
+            <label for="phone" style="font-family: Montserrat; font-weight: normal;">Phone</label>
+             <input type="phone" id="phone" name="phone">
+            <label for="message" style="font-family: Montserrat; font-weight: normal;">Message*</label>
+             <textarea rows="6"  id="message" name="message" required></textarea>
+            <button type="submit" id="submit" name="submit" style="font-family: Montserrat; font-weight: normal;">Send</button>
+        
+      </form>
+      <div id="error"></div>
+      <div id="success-msg"></div>
+        </div>
+      </div>
+
+
+      <footer class="footer">
+        <a href="UMEMEmainPAGE.html"><img id="footerLOGO" src="design/Logo_NO_BACK.png" alt="logo"></a><br>
+        <div class="container1">
+            <div class="footerCONTACT">
+                <ul style="list-style-type:none;">
+                    <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEmainPAGE.html">Home</a></li>
+                    <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEabout.html">About</a></li>
+                    <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEfilled.html">Filled Memes</a></li>
+                    <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEblank.html">Blank Memes</a></li>
+                    <li class="listt" style="font-family: Montserrat; font-weight: bold;"><a href="UMEMEcontact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 id="sm" style="font-family: Montserrat; font-weight: bold;">Author's Social media</h3>
+                <br>
+                <a href="https://www.instagram.com/shiroiii1111/" target="_blank"><img class="social" src="design/ins.png" alt="logo"></a>
+                <a href="https://www.facebook.com/estherchen77777" target="_blank"><img class="social" src="design/facebook.png" alt="logo"></a>
+                <a href="https://x.com/EstherEsth85024" target="_blank"><img class="social" src="design/x.png" alt="logo"></a>
+                <a href="https://www.youtube.com/@chenshiroi1787" target="_blank"><img class="social" src="design/youtube.png" alt="logo"></a>
+            </div>
+        </div>
+        <br>
+        <p style="font-family: Montserrat; font-weight: normal; text-align: center;">Copyright 2024-2025 by Esther Xinqi Chen. All Rights Reserved. estherchen0912@gmail.com</p>
+        <br>
+    </footer>
+</body>
+</html>

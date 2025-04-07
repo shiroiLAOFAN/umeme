@@ -1,0 +1,78 @@
+/*UMEME CSS FILLED_MEMES*/
+@font-face 
+{
+	font-family: impact;
+	src: "font/impact.ttf";
+}
+
+@font-face 
+{
+	font-family: comic;
+	src: "font/ComicNeue-Regular.ttf";
+}
+
+
+#filledHEAD{
+    font-family: impact;
+    font-size: 80px;
+}
+
+
+#filledSUBHEAD{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.filledBODY {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 10px;
+  }
+  
+  .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
